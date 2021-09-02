@@ -1,0 +1,268 @@
+:root {
+  --white: #fff;
+  --black: black;
+  --blue: #4289e7;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+  cursor: pointer;
+  font-size: 16px;
+}
+a:hover {
+  text-decoration: none;
+  color: var(--blue);
+}
+h2 {
+  font-family: Sb;
+}
+body {
+  font-family: sans-serif;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.wrap {
+  padding: 0 ;
+}
+
+header {
+  width: 100%;
+  background-color: var(--white);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+/*NAV BAR*/
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  height: 75px;
+}
+nav .logo img {
+  width: 180px;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+nav ul li {
+  line-height: 70px;
+  font-family: Sr;
+  font-weight: 500;
+}
+.checkbtn {
+  color: #333;
+  font-size: 30px;
+  float: right;
+  line-height: 75px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+img.leave {
+  width: 20px;
+  padding-bottom: 7px;
+}
+.button {
+  height: 75px;
+  line-height: 70px;
+  text-align: center;
+}
+.button button {
+  vertical-align: middle;
+  max-height: 80px;
+  background-color: var(--blue);
+  color: var(--white);
+  font-size: 13px;
+  text-transform: uppercase;
+  border: none;
+  padding: 7px 22px;
+  border-radius: 50px;
+  transition: 0.4s;
+}
+.button button:hover {
+  background-color: #3571e0;
+}
+button span {
+  font-size: 18px;
+  padding-left: 12px;
+  color: #e2e8f0;
+}
+.header-video iframe video {
+  width: 100%;
+}
+
+/*SECTION 1*/
+.section1 {
+  padding: 80px 0 100px 0;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-center h2 {
+  margin: 0 0 40px 0;
+  font-size: 38px;
+  text-transform: uppercase;
+}
+/* .section1 .row {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 150px;
+}
+
+.section1 .row .para {
+  width: 100%;
+}
+.section1 .row .para p {
+  max-width: 100%;
+  font-size: 30px;
+  font-family: Spl;
+  font-weight: 300;
+  line-height: 40px;
+  margin-inline-start: 0.5rem;
+}
+span.sign {
+  font-size: 17px;
+  padding: 55px 100px;
+}
+.section1 .row .img {
+  width: 50%;
+}
+.section1 .row .img img {
+  max-width: 80%;
+} */
+
+/*SECTION 2*/
+.section2 {
+  background-image: url("/img/become.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.text-center .text-center__content {
+  max-width: 450px;
+  display: inline-block;
+}
+.section2 .text-center {
+  padding: 80px 0 400px 0;
+}
+.text-center p {
+  font-family: Sr;
+  letter-spacing: 0.03em;
+  line-height: 25px;
+}
+
+/*SECTION 3*/
+.section3 {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.carousel-inner h2 {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  z-index: 700;
+  font-size: 38px;
+  color: var(--white);
+}
+.item img {
+  min-height: 600px;
+  width: 100%;
+  filter: brightness(75%);
+}
+
+ol.carousel-indicators li {
+  background-color: rgb(26, 26, 26);
+  border: 1px solid var(--white);
+}
+ol.carousel-indicators li,
+ol.carousel-indicators li.active {
+  width: 15px;
+  height: 15px;
+  margin: 0 20px;
+}
+ol.carousel-indicators li.active {
+  background: linear-gradient(180deg, #77dfee 0.18%, var(--blue) 100%);
+  border: none;
+}
+
+.carousel-caption {
+  width: 700px;
+  text-align: left;
+  background-color: var(--white);
+  padding: 35px;
+  margin: 0 auto;
+}
+.carousel-caption span {
+  font-size: 38px;
+  font-family: Sb;
+  color: var(--blue);
+}
+.carousel-caption p {
+  font-family: Spl;
+  color: var(--black);
+  font-size: 16px;
+}
+
+/*SECTION 4*/
+.section4 {
+  margin: 100px 100px;
+  background-image: url("/img/spaceport.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.section4 .text-center {
+  padding: 30px 0 280px 0;
+}
+
+.section4 .text-center h2 {
+  margin: 0 0 10px 0;
+  font-size: 38px;
+  text-transform: uppercase;
+}
+
+/*SECTION 5*/
+.section5 {
+  background-image: url("/img/footer.jpg");
+  background-size: cover;
+}
+.section5 .text-center .text-center__content {
+  color: var(--white);
+  max-width: 800px;
+  padding: 80px 0 400px 0;
+}
+
+.socials svg {
+  margin: 30px 20px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.socials svg:hover {
+  filter: brightness(70%);
+}
+/*FOOTER*/
+
+footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0 40px 0;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+}
