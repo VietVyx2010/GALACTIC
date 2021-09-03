@@ -149,7 +149,7 @@ span.sign {
 
 /*SECTION 2*/
 .section2 {
-  background: url("/img/become.jpg");
+  background: url('/img/become.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
@@ -223,7 +223,7 @@ ol.carousel-indicators li.active {
 /*SECTION 4*/
 .section4 {
   margin: 100px 100px;
-  background: url("/img/spaceport.jpg");
+  background: url('/img/spaceport.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -239,7 +239,7 @@ ol.carousel-indicators li.active {
 
 /*SECTION 5*/
 .section5 {
-  background: url("/img/footer.jpg");
+  background: url('/img/footer.jpg');
   background-size: cover;
 }
 .section5 .text-center .text-center__content {
