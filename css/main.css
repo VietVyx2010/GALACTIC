@@ -229,8 +229,27 @@ ol.carousel-indicators li.active {
 }
 .section4 .text-center {
   padding: 30px 0 280px 0;
+  position: relative;
 }
-
+.spaceport::before {
+  content: "";
+  width: 400px;
+  height: 2px;
+  background-color: #333;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.spaceport::after {
+  content: "";
+  width: 400px;
+  height: 2px;
+  background-color: #333;
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 .section4 .text-center h2 {
   margin: 0 0 10px 0;
   font-size: 38px;
